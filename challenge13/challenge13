@@ -1,0 +1,44 @@
+wrapGifts(["📷", "⚽️"])
+/* Resultado:
+[ '****',
+  '*📷*',
+  '*⚽️*',
+  '****'
+]
+*/
+
+wrapGifts(["🏈🎸", "🎮🧸"])
+/* Resultado:
+[ '******',
+  '*🏈🎸*',
+  '*🎮🧸*',
+  '******'
+]
+*/
+
+wrapGifts(["📷"])
+/* Resultado:
+[ '****',
+  '*📷*',
+  '****'
+]
+*/
+
+wrapGifts([])
+
+function wrapGifts(gifts) {
+  /*📷.length =>> 2*/
+  let wrap = []
+  let wrapping_paper = '*'
+  if(gifts != ''){
+    wrap.push(wrapping_paper.repeat(gifts[0].length+2))
+  	gifts.map(e =>{
+    	wrap.push(wrapping_paper+e+wrapping_paper)
+  	})
+  	wrap.push(wrapping_paper.repeat(gifts[0].length+2))
+  }
+  
+   return wrap
+}
+  
+ 

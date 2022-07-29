@@ -12,6 +12,6 @@ In each folder you will find a README file where the challenge is explained (in 
 
 For the development I used the **[RunJS](https://runjs.app/)** (js playground) and all of them were tested and approved by the AdventJS website.
 
-**Challenges 13/25 completed!!**
+**Challenges 15/25 completed!!**
 
 >  **Note:** The original explanations are written in Spanish but I will do my best to translate them.😖

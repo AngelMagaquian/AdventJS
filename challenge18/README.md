@@ -19,23 +19,15 @@
 
   
 
-Lara Eloft has found some elven remains in a cave, near the Arctic Circle, 8 km north of Rovaniemi.
+Evelyn Belefzin 👩💻 is working on an OS to be used in Santa's workshop 🎅.
 
-  
+He has noticed that in the workshop nobody pays attention to file names and sometimes they try to save the same file more than once... so it is important that we manage duplicate names well.
 
-  
+We have to create a function that when passing us an array of filenames we return an array with the same number of elements but where the names that were repeated are appended at the end `(k)` where k would be the number of times it was found repeated.
 
-Now she is deciphering some mysterious letters containing information about some numbers that can lead her to the next target.
+The best thing to do is to see an example:
 
-  
 
-  
-
-Lara has a document that contains a series of numbers that can be used to decipher them:
-
-  
-
-  
 
 ```
 const files = ['photo', 'postcard', 'photo', 'photo', 'video']

@@ -11,9 +11,9 @@ fixFiles(files3) // ['file', 'file(1)', 'icon', 'icon(1)', 'icon(1)(1)']
 function fixFiles(files) {
   let arr = []
   let aux =[]
-	for(let i= 0; i < files.length; i++){
-    arr.includes(files[i]) ? arr.push(`${files[i]}(${aux.filter(e => e ===files[i]).length})`) : arr.push(files[i])
-    aux.push(files[i])
-	}
+  files.map(e => {
+    arr.includes(e) ? arr.push(`${e}(${aux.filter(i => i ===e).length})`) : arr.push(e)
+    aux.push(e)
+  })
   return arr
 }

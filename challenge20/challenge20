@@ -1,0 +1,11 @@
+pangram('Extrañó pa de col y kiwi se quemó bajo fugaz vaho') // true
+pangram('Jovencillo emponzoñado y con walkman: ¡qué figurota exhibes!') // true
+
+pangram('Esto es una frase larga pero no tiene todas las letras del abecedario') // false
+pangram('De la a a la z, nos faltan letras') // false
+
+function pangram(letter) {
+	let letter_size = new Set( letter.normalize('NFD').replaceAll(/\s|\W/g,'').toLowerCase())
+ 	if (letter.toLowerCase().includes('ñ')){letter_size.add('ñ')}
+  return  letter_size.size === 27 ? true : false
+}
